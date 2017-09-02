@@ -3,9 +3,17 @@ require.config({
 	paths : {
 		jquery : 'jquery/jquery.min',
 		cookie : 'jquery-cookie/jquery.cookie',
-		common : '../js/common',
 		template : 'artTemplate/template-web',
+		bootstrap : 'bootstrap/js/bootstrap.min',
+		common : '../js/common',
 		login : '../js/login',
 		teacherlist : '../js/teacher-list'
+	},
+	shim : {  //把非标准模块转为标准模块
+		bootstrap : {
+			deps : ['jquery']
+		}
 	}
+
+
 });
