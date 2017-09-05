@@ -1,9 +1,9 @@
-define(['jquery','template','util'],function($,template,util){
+define(['jquery','template','util','datepicker','language'],function($,template,util){
 	// 设置导航菜单选中
 	util.setMenu('/teacher/list');
 	// 获取编辑讲师的ID
 	var tcId = util.qs('tc_id');
-	console.log(tcId);
+	// console.log(tcId);
 	if(tcId){
 		// 编辑讲师
 		// 根据ID查询对应的讲师详细信息
