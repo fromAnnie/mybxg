@@ -5,9 +5,10 @@ define(['jquery'],function($){
 			$('.navs a[href="'+path+'"]').addClass('active');
 		},
 		// 查询字符串
-		qs : function(param,key){
+		qs : function(key){
 			// 获取url参数中指定的参数值
 			// flag=123&abc=hello
+			var param = location.search.substring(1);
 			// var param = location.search.substring(1);---这样的话 就不用传param参数了
 			// param是所有的参数
 			// location里有个属性 search  可以console.dir打印测试
